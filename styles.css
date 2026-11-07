@@ -2187,6 +2187,9 @@ kbd {
             grid-template-columns: 1fr;
             gap: 0;
             justify-items: center;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
         }
         .galeria-pie {
             align-items: center;
