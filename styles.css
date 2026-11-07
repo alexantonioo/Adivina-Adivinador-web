@@ -1321,7 +1321,7 @@ kbd {
 .galeria-pie {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     margin-top: 26px;
     padding-top: 18px;
@@ -1341,12 +1341,25 @@ kbd {
 .paginacion {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     flex-wrap: wrap;
 }
 
 .paginacion[hidden] {
     display: none;
+}
+
+/* En pantallas muy estrechas, apila los botones y los centra */
+@media (max-width: 480px) {
+    .paginacion {
+        flex-direction: column;
+        align-items: center;
+    }
+    .paginacion-boton {
+        width: 100%;
+        margin: 4px 0;
+    }
 }
 
 .paginacion-numeros {
