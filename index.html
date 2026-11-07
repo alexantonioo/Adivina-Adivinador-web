@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina Adivinador · Galería de la feria | XXVI Encuentro</title>
+    <meta name="description" content="Bitácora visual de Adivina Adivinador: un modelo de inteligencia artificial que reconoce garabatos. 137 registros reales, 24 categorías y dibujos hechos por el público durante el XXVI Encuentro con la Física, Química, Matemática y Biología.">
+    <meta name="theme-color" content="#040b1c">
+    <meta name="author" content="Alex Contreras">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Adivina Adivinador · Galería de la feria">
+    <meta property="og:description" content="137 registros reales de un modelo de IA que adivina garabatos. Un experimento de divulgación científica para el XXVI Encuentro con la Física, Química, Matemática y Biología.">
+    <meta property="og:image" content="https://alexantonioo.github.io/Adivina-Adivinador-web/imagenes/adivina-20261106-093553-853-casa.png">
+    <meta property="og:locale" content="es_VE">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="preload" href="fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/b612-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <script src="data/galeria.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <a class="saltar-contenido" href="#galeria">Saltar a la galería</a>
+
+    <div class="hoja">
+        <header class="barra-superior">
+            <a class="marca" href="#inicio" aria-label="Adivina Adivinador, volver al inicio">
+                <img class="marca-foto" src="assets/perfil-github.jpg" alt="Alex Contreras" width="42" height="42">
+                <span class="marca-texto">
+                    <strong>Adivina Adivinador</strong>
+                    <span>Registro de feria · AA-26</span>
+                </span>
+            </a>
+
+            <nav class="nav-principal" aria-label="Secciones del sitio">
+                <a href="#proyecto">Proyecto</a>
+                <a href="#como-funciona">Cómo funciona</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#galeria">Galería</a>
+                <a href="#autor">Autor</a>
+            </nav>
+
+            <a class="btn btn-barra" href="#galeria">
+                Ver registros
+                <span aria-hidden="true">↘</span>
+            </a>
+        </header>
+
+        <main>
+            <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+                <div class="hero-texto">
+                    <p class="evento">
+                        <span class="evento-linea" aria-hidden="true"></span>
+                        XXVI Encuentro con la Física, Química, Matemática y Biología
+                    </p>
+
+                    <h1 id="titulo-hero" class="titulo-hero">
+                        <span class="titulo-linea-1">Adivina</span>
+                        <span class="titulo-linea-2">Adivinador</span>
+                    </h1>
+
+                    <p class="hero-kicker">El ojo de la máquina · Registro de feria 2026</p>
+
+                    <p class="hero-lead">
+                        Un modelo de inteligencia artificial entrenado para reconocer
+                        <strong>24 categorías de garabatos</strong>. Durante el encuentro,
+                        personas desde los 6 años dibujaron en vivo y cada resultado quedó
+                        guardado en esta bitácora.
+                    </p>
+
+                    <div class="hero-acciones">
+                        <a class="btn btn-primario" href="#galeria">
+                            Explorar la galería
+                            <span aria-hidden="true">↘</span>
+                        </a>
+                        <a class="btn btn-secundario" href="#como-funciona">
+                            Cómo funciona
+                        </a>
+                    </div>
+
+                    <dl class="hero-datos" aria-label="Datos rápidos del proyecto">
+                        <div>
+                            <dt>Registros reales</dt>
+                            <dd><span data-stat="total">137</span></dd>
+                        </div>
+                        <div>
+                            <dt>Categorías</dt>
+                            <dd>24</dd>
+                        </div>
+                        <div>
+                            <dt>Edades</dt>
+                            <dd>6+</dd>
+                        </div>
+                        <div>
+                            <dt>Privacidad</dt>
+                            <dd>100% local</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <figure class="hero-registro" aria-labelledby="leyenda-registro">
+                    <div class="registro-marco">
+                        <div class="registro-cabecera">
+                            <span class="registro-tipo">Muestra real</span>
+                            <span class="registro-id">C-01 / Casa</span>
+                            <span class="registro-fecha">06 nov 2026 · 09:35</span>
+                        </div>
+
+                        <div class="registro-imagen">
+                            <img
+                                src="imagenes/adivina-20261106-093553-853-casa.png"
+                                width="1280"
+                                height="470"
+                                alt="Registro real de la feria: dibujo de una casa, su máscara de tinta, la entrada de 28 por 28 píxeles y las tres predicciones de la IA."
+                                fetchpriority="high"
+                            >
+                            <span class="registro-escaneo" aria-hidden="true"></span>
+                        </div>
+
+                        <figcaption class="registro-leyenda" id="leyenda-registro">
+                            <span>Trazo original</span>
+                            <span>Máscara</span>
+                            <span>Entrada 28×28</span>
+                            <span>Top-3</span>
+                        </figcaption>
+                    </div>
+
+                    <span class="cota cota-x" aria-hidden="true">X · 1280</span>
+                    <span class="cota cota-y" aria-hidden="true">Y · 470</span>
+                    <span class="cota cota-esquina" aria-hidden="true">AA-26 / R-001</span>
+                </figure>
+            </section>
+
+            <section class="cifras" aria-label="La feria en números">
+                <div class="cifra">
+                    <span class="cifra-codigo">REG / 01</span>
+                    <span class="cifra-valor" data-stat="total">137</span>
+                    <span class="cifra-label">capturas guardadas</span>
+                </div>
+                <div class="cifra">
+                    <span class="cifra-codigo">CLS / 02</span>
+                    <span class="cifra-valor">24</span>
+                    <span class="cifra-label">categorías posibles</span>
+                </div>
+                <div class="cifra">
+                    <span class="cifra-codigo">DÍA / 03</span>
+                    <span class="cifra-valor"><span data-stat="dias">2</span></span>
+                    <span class="cifra-label">jornadas con registros</span>
+                </div>
+                <div class="cifra">
+                    <span class="cifra-codigo">EDAD / 04</span>
+                    <span class="cifra-valor">6+</span>
+                    <span class="cifra-label">años en adelante</span>
+                </div>
+            </section>
+
+            <section class="seccion seccion-proyecto" id="proyecto" aria-labelledby="titulo-proyecto">
+                <div class="seccion-encabezado">
+                    <p class="seccion-kicker">01 / El experimento</p>
+                    <h2 id="titulo-proyecto">Ciencia que se puede garabatear.</h2>
+                </div>
+
+                <div class="proyecto-grid">
+                    <div class="proyecto-texto">
+                        <p class="parrafo-destacado">
+                            Adivina Adivinador nació como una pregunta sencilla:
+                            <strong>¿puede una máquina aprender a reconocer lo que dibuja una persona?</strong>
+                        </p>
+                        <p>
+                            Entrenamos un modelo de visión con 24 categorías de objetos cotidianos:
+                            una casa, un sol, un árbol, un gato, una montaña. En la feria, el público
+                            dibujó con rotulador sobre una pizarra frente a la webcam. La aplicación
+                            procesó cada trazo y respondió con sus tres predicciones más probables.
+                        </p>
+                        <p>
+                            Cada vez que aparecía un resultado, pulsábamos <kbd>G</kbd> para guardar
+                            una ficha PNG con el trazo original, la máscara de tinta, la entrada real
+                            de 28×28 píxeles y el top-3. Lo que ves aquí es ese archivo, sin retoques:
+                            aciertos, dudas y dibujos que hicieron reír a todos.
+                        </p>
+
+                        <blockquote class="cita">
+                            <p>“La IA no siempre acierta. Y eso también es parte del experimento.”</p>
+                        </blockquote>
+                    </div>
+
+                    <aside class="ficha-campo" aria-label="Ficha de campo del proyecto">
+                        <div class="ficha-campo-cabecera">
+                            <span>Ficha de campo</span>
+                            <span>AA-26 / P-01</span>
+                        </div>
+                        <dl>
+                            <div>
+                                <dt>Proyecto</dt>
+                                <dd>Adivina Adivinador</dd>
+                            </div>
+                            <div>
+                                <dt>Evento</dt>
+                                <dd>XXVI Encuentro con la Física, Química, Matemática y Biología</dd>
+                            </div>
+                            <div>
+                                <dt>Formato</dt>
+                                <dd>Pizarrón con webcam</dd>
+                            </div>
+                            <div>
+                                <dt>Público</dt>
+                                <dd>Familias, estudiantes y docentes · desde 6 años</dd>
+                            </div>
+                            <div>
+                                <dt>Registro</dt>
+                                <dd>137 capturas PNG generadas en vivo</dd>
+                            </div>
+                            <div>
+                                <dt>Dato clave</dt>
+                                <dd>Todo el procesamiento ocurrió en la laptop de la feria. Nada se envió a internet.</dd>
+                            </div>
+                        </dl>
+                        <p class="ficha-campo-nota">
+                            Las categorías de la galería corresponden a la predicción número 1
+                            de la IA en cada captura.
+                        </p>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="seccion seccion-como" id="como-funciona" aria-labelledby="titulo-como">
+                <div class="seccion-encabezado seccion-encabezado--fila">
+                    <div>
+                        <p class="seccion-kicker">02 / El proceso</p>
+                        <h2 id="titulo-como">Del garabato a la predicción.</h2>
+                    </div>
+                    <p class="seccion-intro">
+                        Cuatro pasos ocurren en milisegundos, directamente en el navegador.
+                    </p>
+                </div>
+
+                <ol class="pasos">
+                    <li class="paso">
+                        <span class="paso-numero">01</span>
+                        <span class="paso-icono" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <path d="M10 38l4-10L35 7l6 6-21 21-10 4z"/>
+                                <path d="M31 11l6 6M14 28l6 6"/>
+                            </svg>
+                        </span>
+                        <h3>Dibujas</h3>
+                        <p>Con un rotulador negro sobre una pizarra frente a la webcam.</p>
+                    </li>
+                    <li class="paso">
+                        <span class="paso-numero">02</span>
+                        <span class="paso-icono" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <rect x="8" y="8" width="32" height="32"/>
+                                <path d="M8 22h8V8M22 8v8h18M40 26h-8v14M26 40v-8H8"/>
+                            </svg>
+                        </span>
+                        <h3>Se limpia el trazo</h3>
+                        <p>La app recorta el dibujo, lo centra y lo reduce a una matriz de 28×28 en grises.</p>
+                    </li>
+                    <li class="paso">
+                        <span class="paso-numero">03</span>
+                        <span class="paso-icono" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <circle cx="10" cy="16" r="3"/><circle cx="10" cy="32" r="3"/>
+                                <circle cx="24" cy="10" r="3"/><circle cx="24" cy="24" r="3"/><circle cx="24" cy="38" r="3"/>
+                                <circle cx="38" cy="16" r="3"/><circle cx="38" cy="32" r="3"/>
+                                <path d="M13 16l8-5M13 17l8 6M13 31l8-6M13 32l8 5M27 11l8 4M27 24h8M27 37l8-4"/>
+                            </svg>
+                        </span>
+                        <h3>La red opina</h3>
+                        <p>Una red neuronal convolucional compara el patrón con las 24 clases que aprendió.</p>
+                    </li>
+                    <li class="paso">
+                        <span class="paso-numero">04</span>
+                        <span class="paso-icono" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <path d="M8 38V22M18 38V14M28 38V27M38 38V9"/>
+                                <path d="M6 38h36M38 9l-4 4M38 9l4 4"/>
+                            </svg>
+                        </span>
+                        <h3>Top-3</h3>
+                        <p>Se muestran las tres respuestas más probables con su porcentaje de confianza.</p>
+                    </li>
+                </ol>
+
+                <p class="nota-tecnica">
+                    En cada ficha de la galería, el tercer panel es la imagen real que vio el modelo:
+                    blanco representa el trazo. El cuarto bloque muestra el top-3 que apareció en pantalla.
+                </p>
+            </section>
+
+            <section class="seccion seccion-categorias" id="categorias" aria-labelledby="titulo-categorias">
+                <div class="seccion-encabezado seccion-encabezado--fila">
+                    <div>
+                        <p class="seccion-kicker">03 / El vocabulario</p>
+                        <h2 id="titulo-categorias">24 clases, un solo pizarrón.</h2>
+                    </div>
+                    <p class="seccion-intro">
+                        Toca una categoría para ver solo los registros en los que la IA la eligió como respuesta principal.
+                    </p>
+                </div>
+
+                <div class="categorias-grid" id="categorias-grid" aria-live="polite">
+                    <noscript>
+                        <p class="aviso-noscript">
+                            Activa JavaScript para explorar las categorías y la galería.
+                        </p>
+                    </noscript>
+                </div>
+            </section>
+
+            <section class="seccion seccion-galeria" id="galeria" aria-labelledby="titulo-galeria">
+                <div class="seccion-encabezado seccion-encabezado--fila">
+                    <div>
+                        <p class="seccion-kicker">04 / Archivo de feria</p>
+                        <h2 id="titulo-galeria">Los dibujos que alimentaron al ojo.</h2>
+                    </div>
+                    <p class="seccion-intro">
+                        Capturas generadas en vivo con la tecla <kbd>G</kbd>. Sin filtros, sin retoques.
+                        Cada tarjeta se agrupa por la predicción número 1 de la IA.
+                    </p>
+                </div>
+
+                <div class="galeria-controles" aria-label="Controles de la galería">
+                    <div class="buscador">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7"/>
+                            <path d="M16 16l5 5"/>
+                        </svg>
+                        <label class="visualmente-oculto" for="buscador-galeria">Buscar en la galería</label>
+                        <input
+                            id="buscador-galeria"
+                            type="search"
+                            placeholder="Buscar categoría o fecha…"
+                            autocomplete="off"
+                            spellcheck="false"
+                        >
+                    </div>
+
+                    <label class="selector-orden">
+                        <span class="visualmente-oculto">Ordenar registros</span>
+                        <select id="orden-galeria">
+                            <option value="recientes">Más recientes</option>
+                            <option value="antiguos">Más antiguos</option>
+                            <option value="categoria">Categoría A–Z</option>
+                        </select>
+                    </label>
+
+                    <p class="contador-resultados" id="contador-resultados" aria-live="polite">
+                        <span data-stat="total">137</span> registros
+                    </p>
+                </div>
+
+                <div class="filtros" id="filtros-galeria" role="group" aria-label="Filtrar por categoría">
+                    <noscript>
+                        <p class="aviso-noscript">Activa JavaScript para filtrar la galería.</p>
+                    </noscript>
+                </div>
+
+                <div class="galeria-grid" id="galeria-grid"></div>
+
+                <div class="galeria-vacio" id="galeria-vacio" hidden>
+                    <p class="galeria-vacio-titulo">Sin registros para esta búsqueda.</p>
+                    <p>Prueba con otra categoría o borra el texto del buscador.</p>
+                    <button class="btn btn-secundario" id="btn-limpiar-filtros" type="button">
+                        Limpiar filtros
+                    </button>
+                </div>
+
+                <div class="galeria-pie">
+                    <p class="galeria-nota" id="galeria-nota" aria-live="polite">
+                        Mostrando <span id="rango-registros">0</span> de
+                        <span id="contador-filtrados">137</span> registros ·
+                        página <span id="pagina-actual">1</span> de <span id="total-paginas">1</span>
+                    </p>
+                    <nav class="paginacion" id="paginacion-galeria" aria-label="Paginación de la galería">
+                        <button class="paginacion-boton paginacion-control" id="pagina-anterior" type="button" aria-label="Página anterior">←</button>
+                        <div class="paginacion-numeros" id="paginacion-numeros"></div>
+                        <button class="paginacion-boton paginacion-control" id="pagina-siguiente" type="button" aria-label="Página siguiente">→</button>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="seccion seccion-tecnica" id="tecnica" aria-labelledby="titulo-tecnica">
+                <div class="seccion-encabezado">
+                    <p class="seccion-kicker">05 / Ficha técnica</p>
+                    <h2 id="titulo-tecnica">Bajo el capó.</h2>
+                </div>
+
+                <div class="tecnica-grid">
+                    <div class="tecnica-lista">
+                        <dl>
+                            <div>
+                                <dt>Modelo</dt>
+                                <dd>CNN de visión · Keras / TensorFlow exportado a TensorFlow.js</dd>
+                            </div>
+                            <div>
+                                <dt>Entrada</dt>
+                                <dd>28 × 28 × 1 · 784 valores en escala de grises, normalizados a [0, 1]</dd>
+                            </div>
+                            <div>
+                                <dt>Salida</dt>
+                                <dd>24 clases · top-3 con porcentaje de confianza</dd>
+                            </div>
+                            <div>
+                                <dt>Preprocesamiento</dt>
+                                <dd>Recorte al bounding box del trazo, centrado y escalado</dd>
+                            </div>
+                            <div>
+                                <dt>Inferencia</dt>
+                                <dd>100% en el navegador · sin servidores externos</dd>
+                            </div>
+                            <div>
+                                <dt>Privacidad</dt>
+                                <dd>Los dibujos y las capturas nunca salieron de la laptop de la feria</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <aside class="tecnica-destacado">
+                        <p class="tecnica-destacado-kicker">Hecho para la feria</p>
+                        <p class="tecnica-destacado-texto">
+                            Sin conexión a internet. Sin instalar nada. La app, el modelo y las
+                            fuentes viajaron en una carpeta y funcionaron durante todo el encuentro.
+                        </p>
+                        <div class="tecnica-chips" aria-label="Tecnologías utilizadas">
+                            <span>TensorFlow.js</span>
+                            <span>JavaScript</span>
+                            <span>Canvas</span>
+                            <span>Webcam</span>
+                            <span>HTML + CSS</span>
+                        </div>
+                        <a class="btn btn-secundario" href="https://github.com/alexantonioo/quick-draw" target="_blank" rel="noopener noreferrer">
+                            Ver el proyecto de la app
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="seccion seccion-autor" id="autor" aria-labelledby="titulo-autor">
+                <div class="seccion-encabezado">
+                    <p class="seccion-kicker">06 / Quién está detrás</p>
+                    <h2 id="titulo-autor">Alex Contreras.</h2>
+                </div>
+
+                <div class="autor-grid">
+                    <div class="autor-marca">
+                        <img class="autor-foto" src="assets/perfil-github.jpg" alt="Alex Contreras" width="180" height="180" loading="lazy">
+                        <span class="autor-codigo">DEV / 001 · Alex Contreras</span>
+                    </div>
+
+                    <div class="autor-texto">
+                        <p class="autor-rol">Desarrollador · IA + web</p>
+                        <p class="parrafo-destacado">
+                            Diseñé y programé la aplicación y esta bitácora de la feria.
+                            El modelo de IA se entrenó en equipo con Jasneidy Pernia.
+                        </p>
+                        <p>
+                            Me interesa convertir tecnología compleja en experiencias que cualquiera
+                            pueda probar: visión por computadora, interfaces claras y proyectos que
+                            se disfrutan tanto en un laboratorio como en un salón lleno de niños.
+                        </p>
+                        <p>
+                            Adivina Adivinador fue desarrollado junto a <strong>Jasneidy Pernia</strong>
+                            para el XXVI Encuentro con la Física, Química, Matemática y Biología.
+                        </p>
+
+                        <ul class="autor-etiquetas" aria-label="Áreas de trabajo">
+                            <li>Python</li>
+                            <li>TensorFlow</li>
+                            <li>JavaScript</li>
+                            <li>Visión por computadora</li>
+                            <li>Diseño de interfaces</li>
+                        </ul>
+
+                        <div class="autor-enlaces">
+                            <a class="btn btn-primario" href="https://github.com/alexantonioo" target="_blank" rel="noopener noreferrer">
+                                GitHub / alexantonioo
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a class="btn btn-secundario" href="https://github.com/alexantonioo/Adivina-Adivinador-web" target="_blank" rel="noopener noreferrer">
+                                Código de esta web
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="pie">
+            <div class="pie-fila">
+                <span class="pie-marca">ADIVINA ADIVINADOR · AA-26</span>
+                <span>XXVI Encuentro con la Física, Química, Matemática y Biología</span>
+            </div>
+            <div class="pie-fila pie-fila--tenue">
+                <span>Alex Contreras · Jasneidy Pernia</span>
+                <span>HTML + CSS + JavaScript · Alojado en GitHub Pages</span>
+                <a href="#inicio">Volver arriba ↑</a>
+            </div>
+            <p class="pie-nota">
+                Los dibujos son registros anónimos tomados durante la feria.
+                Ninguna imagen se envió a un servidor.
+            </p>
+        </footer>
+    </div>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-titulo" hidden>
+        <div class="lightbox-fondo" data-cerrar-lightbox></div>
+
+        <div class="lightbox-panel">
+            <div class="lightbox-cabecera">
+                <span class="lightbox-codigo" id="lightbox-codigo">C-01</span>
+                <h2 id="lightbox-titulo">Casa</h2>
+                <button class="lightbox-cerrar" id="lightbox-cerrar" type="button" aria-label="Cerrar visor">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <path d="M6 6l12 12M18 6L6 18"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="lightbox-cuerpo">
+                <div class="lightbox-imagen-contenedor">
+                    <img id="lightbox-imagen" alt="" width="1280" height="470">
+                </div>
+
+                <div class="lightbox-info">
+                    <p class="lightbox-prediccion">
+                        Predicción #1:
+                        <strong id="lightbox-prediccion">Casa</strong>
+                    </p>
+
+                    <dl class="lightbox-datos">
+                        <div>
+                            <dt>Fecha</dt>
+                            <dd id="lightbox-fecha">—</dd>
+                        </div>
+                        <div>
+                            <dt>Archivo</dt>
+                            <dd id="lightbox-archivo">—</dd>
+                        </div>
+                        <div>
+                            <dt>Entrada del modelo</dt>
+                            <dd>28 × 28 × 1</dd>
+                        </div>
+                    </dl>
+
+                    <p class="lightbox-nota">
+                        Ficha generada por la app durante la feria. El panel derecho muestra
+                        el top-3 de predicciones y la latencia real del modelo.
+                    </p>
+
+                    <a class="btn btn-secundario lightbox-descarga" id="lightbox-descarga" href="#" download>
+                        Descargar PNG
+                        <span aria-hidden="true">↓</span>
+                    </a>
+
+                    <div class="lightbox-navegacion">
+                        <button class="btn-nav-ficha" id="lightbox-anterior" type="button">
+                            <span aria-hidden="true">←</span> Anterior
+                        </button>
+                        <span class="lightbox-contador" id="lightbox-contador">1 / 137</span>
+                        <button class="btn-nav-ficha" id="lightbox-siguiente" type="button">
+                            Siguiente <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <noscript>
+        <div class="sin-js">
+            Esta galería necesita JavaScript para mostrar los registros y los filtros.
+            Puedes ver las imágenes directamente en la carpeta <code>imagenes/</code>.
+        </div>
+    </noscript>
+</body>
+</html>
