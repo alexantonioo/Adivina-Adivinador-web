@@ -96,6 +96,7 @@ body {
     background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 body.lightbox-abierto {
@@ -2179,6 +2180,25 @@ kbd {
     .galeria-grid {
         grid-template-columns: minmax(0, 1fr);
         gap: 16px;
+    }
+
+    @media (max-width: 480px) {
+        .galeria-grid {
+            grid-template-columns: 1fr;
+            gap: 0;
+            justify-items: center;
+        }
+        .galeria-pie {
+            align-items: center;
+        }
+        .paginacion {
+            flex-direction: column;
+            align-items: center;
+        }
+        .paginacion-boton {
+            width: 100%;
+            margin: 4px 0;
+        }
     }
 
     .galeria-pie {
