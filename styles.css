@@ -215,7 +215,9 @@ kbd {
     display: flex;
     align-items: center;
     gap: 28px;
-    padding: 14px clamp(18px, 3vw, 40px);
+    padding: 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
     background: rgba(4, 11, 28, 0.88);
     border-bottom: 1px solid var(--borde);
     backdrop-filter: blur(14px);
@@ -251,6 +253,13 @@ kbd {
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+}
+
+/* Ocultar el título en móviles muy pequeños, dejando espacio para el botón */
+@media (max-width: 640px) {
+    .marca-texto strong {
+        display: none;
+    }
 }
 
 .marca-texto span {
