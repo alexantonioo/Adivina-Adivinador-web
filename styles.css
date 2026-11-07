@@ -2183,6 +2183,8 @@ kbd {
     }
 
     @media (max-width: 480px) {
+        :root { --ancho: 100%; }
+        .hoja { width: 100%; margin: 0; }
         .galeria-grid {
             grid-template-columns: 1fr;
             gap: 0;
